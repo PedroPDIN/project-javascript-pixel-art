@@ -11,3 +11,6 @@ function createPixels() {
   }
 }
 createPixels();
+
+const black = document.querySelector('.black');
+black.classList.add('selected');
