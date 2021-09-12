@@ -19,7 +19,7 @@ black.classList.add('selected');
 // requisito 7
 const color = document.querySelectorAll('.color');
 for (let index = 0; index < color.length; index += 1) {
-  color[index].addEventListener('click',  event => {
+  color[index].addEventListener('click', (event) => {
     for (let ind = 0; ind < color.length; ind += 1) {
       color[ind].classList.remove('selected');
       event.target.classList.add('selected');
