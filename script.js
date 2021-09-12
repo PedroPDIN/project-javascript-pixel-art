@@ -26,3 +26,11 @@ for (let index = 0; index < color.length; index += 1) {
     }
   });
 }
+
+/* const pixel = document.querySelectorAll('.pixel');
+const black = document.querySelector('.black')
+for (let index = 0; index < pixel.length; index += 1) {
+  pixel[index].addEventListener('click', (event) => {
+   
+  })
+} */
