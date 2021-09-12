@@ -1,3 +1,4 @@
+// requisito 4.
 function createPixels() {
   const bord = document.getElementById('pixel-board');
   for (let index = 0; index < 5; index += 1) {
@@ -15,14 +16,13 @@ createPixels();
 const black = document.querySelector('.black');
 black.classList.add('selected');
 
-const color = document.querySelector('.color')
+// requisito 7
+const color = document.querySelectorAll('.color')
 for (let index = 0; index < color.length; index += 1) {
-  color[index].classList.remove('selected');
+  color[index].addEventListener('click', function (event) {
+    for (let ind = 0; ind < color.length; ind += 1) {
+      color[ind].classList.remove('selected');
+      event.target.classList.add('selected');
+    }
+  });
 }
-color.addEventListener('click', function(event){
-  for (let index = 0; index < color.length; index +=1) {
-    color[index].event.target.class.classList.add('selected');
-  }
-})
-
-
