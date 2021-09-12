@@ -14,3 +14,15 @@ createPixels();
 
 const black = document.querySelector('.black');
 black.classList.add('selected');
+
+const color = document.querySelector('.color')
+for (let index = 0; index < color.length; index += 1) {
+  color[index].classList.remove('selected');
+}
+color.addEventListener('click', function(event){
+  for (let index = 0; index < color.length; index +=1) {
+    color[index].event.target.class.classList.add('selected');
+  }
+})
+
+
