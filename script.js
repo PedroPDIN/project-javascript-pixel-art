@@ -30,14 +30,13 @@ for (let index = 0; index < color.length; index += 1) {
 // Requisito 8.
 const pixel = document.querySelectorAll('.pixel');
 
-function pixelColor () {
+function pixelColor() {
   for (let index = 0; index < pixel.length; index += 1) {
     pixel[index].addEventListener('click', (event) => {
       const selected = document.querySelector('.selected');
-      let bg = window.getComputedStyle(selected).getPropertyValue('background-Color');
-    event.target.style.backgroundColor = bg;
-    })
+      const bg = window.getComputedStyle(selected).getPropertyValue('background-Color');
+      event.target.style.backgroundColor = bg;
+    });
   }
 }
-
 pixelColor ();
