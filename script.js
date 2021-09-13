@@ -39,4 +39,4 @@ function pixelColor() {
     });
   }
 }
-pixelColor ();
+pixelColor();
