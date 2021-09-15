@@ -7,8 +7,8 @@ function createPixels() {
       const Pixel = document.createElement('div');
       Pixel.classList.add('pixel');
       inline.appendChild(Pixel);
+      bord.appendChild(inline);
     }
-    bord.appendChild(inline);
   }
 }
 createPixels();
@@ -52,3 +52,14 @@ function whiteButton() {
   })
 }
 whiteButton();
+
+// requisito 10 ( bonûs)
+function quantidade() {
+let input = document.getElementById('board-size');
+let button = document.getElementById('generate-board');
+button.addEventListener('click', () => {
+  
+})
+
+}
+quantidade();
