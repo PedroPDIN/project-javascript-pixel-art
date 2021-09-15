@@ -40,3 +40,15 @@ function pixelColor() {
   }
 }
 pixelColor();
+
+//requisito 9
+function whiteButton() {
+  const button = document.getElementById('clear-board');
+  button.addEventListener('click', () => {
+    for (let index = 0; index < pixel.length; index += 1) {
+    let pixels = pixel[index];
+    pixels.style.backgroundColor = "white";
+    }
+  })
+}
+whiteButton();
